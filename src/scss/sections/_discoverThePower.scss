@@ -1,0 +1,167 @@
+.discover_the_power_section {
+  max-width: 1192px;
+  min-height: 397px;
+  padding: 30px 16px 16px 45px;
+  margin: 0 auto 81px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding: 16px;
+    min-height: 480px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 397px;
+    background-image: url(../images/discover-w-r.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      background-size: cover;
+
+      min-height: 497px;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 397px;
+    background-image: url(../images/discover-bg-img.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+  .power_inventor_img {
+    width: 283px;
+    height: 248px;
+    position: absolute;
+    top: 69%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    @media (min-width: 992px) and (max-width: 1130px) {
+      left: 57%;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .dis_power_content {
+    width: 395px;
+
+    @media (max-width: 599px) {
+      width: auto;
+    }
+
+    .dis_power_heading_img {
+      width: 665px;
+      min-height: 76px;
+      background-image: url(../images/discover_heading.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      left: -69px;
+      z-index: 1;
+      padding: 17px;
+      margin-bottom: 29px;
+
+      @media (max-width: 768px) {
+        width: auto;
+        padding: 20px 15px;
+        margin-bottom: 16px;
+        left: 0;
+      }
+
+      .power_heading {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 34px;
+        line-height: 34px;
+        text-align: center;
+        color: #ffffff;
+
+        @media (max-width: 768px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
+    }
+    .power_main_heading {
+      position: relative;
+      z-index: 1;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      color: #000000;
+      margin: 0 0 11px;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+    .power_text {
+      position: relative;
+      z-index: 1;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      color: #000000;
+      opacity: 0.5;
+      padding-right: 19px;
+
+      @media (max-width: 768px) {
+        padding-right: 0;
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  .more_power_find {
+    width: 479px;
+    height: 113px;
+    background: #cd2c1e;
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+    padding: 37px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    z-index: 2;
+
+    @media (min-width: 992px) and (max-width: 1130px) {
+      width: 440px;
+    }
+
+    @media (max-width: 768px) {
+      width: 250px;
+      height: auto;
+      padding: 16px;
+      font-size: 16px;
+      line-height: 28px;
+      gap: 16px;
+    }
+  }
+}

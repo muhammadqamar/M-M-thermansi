@@ -1,0 +1,223 @@
+.find_cost_section {
+  max-width: 1192px;
+  margin: 0 auto 32px;
+  padding: 65px 54px 38px 49px;
+  background: #f2f2f2;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+
+  @media (min-width: 768px) and (max-width: 1160px) {
+    padding: 65px 24px 38px;
+  }
+
+  @media (max-width: 992px) {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 190px 24px 38px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 140px 16px 38px;
+  }
+
+  .cost_heading_bg {
+    width: 499px;
+    min-height: 108px;
+    background-image: url(../images/cost_heading.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 14px 25px 19px 19px;
+    position: absolute;
+    top: 33px;
+    left: -24px;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+      min-height: auto;
+      background-size: contain;
+      top: 24px;
+      width: 315px;
+    }
+
+    .cost_heading {
+      font-style: italic;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 36px;
+      text-align: center;
+      color: #ffffff;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .cost_stage_box {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    justify-content: space-between;
+    margin-bottom: 33px;
+
+    @media (max-width: 992px) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    // bg img
+    .table_bg {
+      width: auto;
+      height: auto;
+      position: absolute;
+      bottom: 63px;
+
+      @media (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    // box
+    .cost_box {
+      position: relative;
+      width: 211px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 28px;
+
+      @media (max-width: 768px) {
+        gap: 16px;
+      }
+
+      @media (max-width: 992px) {
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background: #cd2c1e;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 19px 24px;
+      }
+
+      .euro_cost {
+        font-style: italic;
+        font-weight: 800;
+        font-size: 52px;
+        line-height: 50px;
+        text-align: center;
+        color: #000000;
+        border: 1px solid #ffffff;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        margin: 0;
+
+        @media (max-width: 599px) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+
+        @media (max-width: 399px) {
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        @media (max-width: 992px) {
+          color: #fff;
+          border: none;
+        }
+      }
+      .cost_groph_img {
+        width: auto;
+        height: auto;
+      }
+
+      .cost_item {
+        width: 100%;
+        min-height: 118px;
+        background: #cd2c1e;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        padding: 19px 14px;
+
+        @media (max-width: 599px) {
+          flex-direction: column;
+        }
+
+        @media (max-width: 992px) {
+          width: max-content;
+          border: none;
+          border-radius: 0;
+          padding: 0;
+        }
+
+        .c_item_img {
+          width: auto;
+          height: auto;
+        }
+
+        .c_c_item__3 {
+          @media (min-width: 992px) and (max-width: 1160px) {
+            width: 50px;
+          }
+        }
+
+        .c_item_name {
+          font-style: italic;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 17px;
+          color: #ffffff;
+          margin: 0;
+        }
+        .c_name_1 {
+          width: 86px;
+          @media (max-width: 399px) {
+            width: auto;
+          }
+        }
+        .c_name_2 {
+          width: 113px;
+
+          @media (max-width: 399px) {
+            width: auto;
+          }
+        }
+        .c_name_3,
+        .c_name_4 {
+          width: 94px;
+          @media (max-width: 399px) {
+            width: auto;
+          }
+        }
+        .c_name_5 {
+          width: 63px;
+          @media (max-width: 399px) {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .cust_sub_text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    opacity: 0.5;
+    width: 878px;
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}
